@@ -76,7 +76,7 @@ Ví dụ: Bác sĩ nội khoa, bác sĩ tai mũi họng, ...
 Khi bạn muốn khám bệnh, bạn cần phải đặt lịch khám chữa tương ứng, đi kèm với những thông tin chuẩn bị khám chữa bệnh như sau: Tên bác sĩ ,Khung giờ khám ,Giá khám ,Thông tin cá nhân như: tên, giới tính, số điện thoại, ngày tháng năm sinh, địa chỉ, lý do thăm khám.
 
 
-5.2. Dành cho bác sĩ
+5.2. Dành cho bác sĩ (DocTor)
 
 
 5.2.1. Đăng nhập
@@ -100,19 +100,39 @@ Bác sĩ có thể nhận hoặc hủy lịch tương ứng đối với bệnh 
 5.2.4 Gửi thông tin về email cá nhân của bệnh nhân
 
 
+
+5.3. Dành cho người quản lý hệ thống (Admin)
+
+5.3.1. Đăng nhập
+
+Như đã nói, do phần này chúng ta làm việc với JWT, nên các request sẽ dưới dạng REST API tương ứng.  API để cho phép request mà cần phải có token để xác thực thì mới cho phép sử dụng những chức năng cơ bản của hệ thống.
+
+
+5.3.2. Khóa/hủy khóa tài khoản của bệnh nhân
+
+Admin có thể khóa hoặc hủy khóa tương ứng đối với tài khoản bệnh nhân. Đối với khóa tài khoản thì bổ sung thêm trường thông tin ‘mô tả’ để nêu rõ lý do khóa tài khoản.
+
+
+5.3.3. Thêm tài khoản của bác sĩ
+
+Admin có thể thêm được tài khoản bác sĩ vào hệ thống với các trường thông tin cơ bản
+
+
+5.3.4. Khóa/hủy khóa tài khoản của bác sĩ
+
+Admin có thể khóa hoặc hủy khóa tương ứng đối với tài khoản bác sĩ. Đối với khóa tài khoản thì bổ sung thêm trường thông tin ‘mô tả’ để nêu rõ lý do khóa tài khoản.
+
+
 Bác sĩ có thể gửi thông tin khám chữa bệnh về email cá nhân. Để người dùng có thể xem được những thông tin bệnh lý.
 
 
-Hãy trả về tin nhắn (message) tương ứng khi gửi request thông tin thành công, trả về mã lỗi khi có ngoại lệ xảy ra.
-
-
-5.2.5. Xem thông tin chi tiết lịch khám của từng bệnh nhân
+5.3.5. Xem thông tin chi tiết lịch khám của từng bệnh nhân
 
 
 Admin có thể xem thông chi tiết những lịch khám của bệnh nhân mà người quản lý hệ thống mong muốn.
 
 
-5.2.6. Xem thông tin chi tiết lịch khám của từng bác sĩ
+5.3.6. Xem thông tin chi tiết lịch khám của từng bác sĩ
 
 
 Admin có thể xem thông chi tiết những lịch khám của bác sĩ mà người quản lý hệ thống mong muốn.
