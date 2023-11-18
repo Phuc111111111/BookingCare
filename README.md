@@ -1,4 +1,5 @@
 # BookingCare
+Gồm 3 Loại người dùng : ADMIN, USER , DOCTOR.
 
 5.1. Dành cho người dùng hệ thống (user)
 
